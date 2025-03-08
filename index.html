@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bibliothèque en Ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="#livres">Livres</a></li>
+                <li><a href="#emprunt">Emprunter</a></li>
+                <li><a href="#clubs">Clubs de Lecture</a></li>
+                <li><a href="#critiques">Critiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Livres Disponibles -->
+        <section id="livres" class="card">
+            <h2>Livres Disponibles</h2>
+            <div class="content">
+                <p>Explorez notre vaste collection de livres disponibles en ligne.</p>
+                <div class="book-list">
+                    <div class="book card">
+                        <h3>Le Petit Prince</h3>
+                        <p>Auteur : Antoine de Saint-Exupéry</p>
+                        <p>Genre : Conte philosophique</p>
+                    </div>
+                    <div class="book card">
+                        <h3>1984</h3>
+                        <p>Auteur : George Orwell</p>
+                        <p>Genre : Science-fiction</p>
+                    </div>
+                    <div class="book card">
+                        <h3>Harry Potter à l'école des sorciers</h3>
+                        <p>Auteur : J.K. Rowling</p>
+                        <p>Genre : Fantasy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Emprunter des Livres -->
+        <section id="emprunt" class="card">
+            <h2>Emprunter des Livres</h2>
+            <div class="content">
+                <p>Empruntez des livres en ligne et profitez de la lecture chez vous.</p>
+                <form>
+                    <label for="book-select">Choisissez un livre :</label>
+                    <select id="book-select" name="book">
+                        <option value="petit-prince">Le Petit Prince</option>
+                        <option value="1984">1984</option>
+                        <option value="harry-potter">Harry Potter à l'école des sorciers</option>
+                    </select>
+                    <button type="submit">Emprunter</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section Clubs de Lecture -->
+        <section id="clubs" class="card">
+            <h2>Clubs de Lecture</h2>
+            <div class="content">
+                <p>Rejoignez nos clubs de lecture virtuels et discutez de vos livres préférés.</p>
+                <div class="club-list">
+                    <div class="club card">
+                        <h3>Club de Lecture Classique</h3>
+                        <p>Prochaine réunion : 25 octobre 2023</p>
+                    </div>
+                    <div class="club card">
+                        <h3>Club de Lecture Science-Fiction</h3>
+                        <p>Prochaine réunion : 30 octobre 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Critiques et Commentaires -->
+        <section id="critiques" class="card">
+            <h2>Critiques et Commentaires</h2>
+            <div class="content">
+                <p>Lisez et écrivez des critiques sur vos livres préférés.</p>
+                <div class="review-list">
+                    <div class="review card">
+                        <h3>Le Petit Prince</h3>
+                        <p>Note : ⭐⭐⭐⭐⭐</p>
+                        <p>Commentaire : Un classique intemporel !</p>
+                    </div>
+                    <div class="review card">
+                        <h3>1984</h3>
+                        <p>Note : ⭐⭐⭐⭐</p>
+                        <p>Commentaire : Une dystopie fascinante.</p>
+                    </div>
+                </div>
+                <form>
+                    <label for="book-review">Choisissez un livre :</label>
+                    <select id="book-review" name="book">
+                        <option value="petit-prince">Le Petit Prince</option>
+                        <option value="1984">1984</option>
+                        <option value="harry-potter">Harry Potter à l'école des sorciers</option>
+                    </select>
+                    <label for="comment">Votre commentaire :</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bibliothèque en Ligne. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
